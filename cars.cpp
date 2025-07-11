@@ -25,8 +25,8 @@ void RentCars(Cars* cars,int size){
     if(cars[id-1].is_rent==true){
         std::cout<<"Sorry but the car is not avaliable!\n";
     }else{
-        cars[id-1].is_rent=false;
-        std::cout<<"Your car is avaliable: "<<cars[id].name<<" "<< cars[id].model<<"\n";
+        cars[id-1].is_rent=true;
+        std::cout<<"Your car is avaliable: "<<cars[id-1].name<<" "<< cars[id-1].model<<"\n";
     }
 }
 
