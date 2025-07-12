@@ -12,12 +12,20 @@ class Player{
 };
 class Girl: public Player{
     public:
+        Girl(string name, int age){
+            this->name=name;
+            this->age=age;
+        }
         void playgirl(){
             cout<<"Your choice is a girl!\n";
         }
 }; 
 class Boy: public Player{
     public:
+        Boy(string name, int age){
+            this->name=name;
+            this->age=age;
+        }
         void playboy(){
             cout<<"Your choice is a boy!\n";
         }
@@ -26,14 +34,9 @@ class Boy: public Player{
 
 int main(){
 
-    Girl playergirl;
-    Boy playerboy;
+    Girl playergirl("Ayda", 20);
+    Boy playerboy("Arda", 21);
 
-    playergirl.name="Ayda";
-    playergirl.age=20;
-
-    playerboy.name="Arda";
-    playerboy.age=21;
 
     playergirl.greet();
     cout<<"My name is "<<playergirl.name<<" and i'm "<<playergirl.age<< " years old!\n";
